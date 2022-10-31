@@ -12,12 +12,12 @@ public class Main {
         Employees [4] = new Employee("Vasili","Vasilievich","Vasilev",
                 14000,5);
 
-        Show.EmployyesShow(Employees);
-        System.out.println("Суммарная зарплата " + Show.summSelory(Employees));
-        System.out.println("минимальная зарплата у " + Show.minSelory(Employees));
-        System.out.println("максимальная зарплата у " + Show.maxSelory(Employees));
-        System.out.println("Средняя зарплата  " + Show.middleSelory(Employees));
-        Show.namesOfEmployees(Employees);
+        Show.showEmployees(Employees);
+        System.out.println("Суммарная зарплата " + Show.sumUpTheSalary(Employees));
+        System.out.println("минимальная зарплата у " + Show.showMinimumWage(Employees));
+        System.out.println("максимальная зарплата у " + Show.showTheMaximumSalary(Employees));
+        System.out.println("Средняя зарплата  " + Show.showAverageSalary(Employees));
+        Show.showEmployeeNames(Employees);
 
     }
 }

@@ -1,17 +1,17 @@
 public class Show {
-    public static void EmployyesShow(Employee[] arr){
+    public static void showEmployees(Employee[] arr){
         for(int i = 0; i< arr.length;i++){
-            System.out.println(arr[i].getFirstName());
+            System.out.println(arr[i]);
         }
     }
-    public static int summSelory(Employee[] arr){
+    public static int sumUpTheSalary(Employee[] arr){
         int summ = 0;
         for(int i = 0; i < arr.length; i++){
             summ+=arr[i].getSalary();
         }
         return summ;
     }
-    public static String minSelory(Employee[]arr){
+    public static String showMinimumWage(Employee[]arr){
         int min = arr[0].getSalary();
         int j = 0;
         for(int i = 0; i<arr.length; i++){
@@ -22,7 +22,7 @@ public class Show {
         }
         return arr[j].getLastName();
     }
-    public static String maxSelory(Employee[]arr){
+    public static String showTheMaximumSalary(Employee[]arr){
         int max = arr[0].getSalary();
         int j = 0;
         for(int i = 0; i<arr.length; i++){
@@ -33,14 +33,14 @@ public class Show {
         }
         return arr[j].getLastName();
     }
-    public static double middleSelory(Employee[] arr){
+    public static double showAverageSalary(Employee[] arr){
         double summ = 0;
         for(int i = 0; i < arr.length; i++){
             summ+=arr[i].getSalary();
         }
         return summ / arr.length;
     }
-    public static void namesOfEmployees(Employee[] arr){
+    public static void showEmployeeNames(Employee[] arr){
         for (int i = 0; i <arr.length ; i++) {
             System.out.println(arr[i].getLastName()+ " " + arr[i].getFirstName()+ " "+arr[i].getTwoName());
         }

@@ -2,11 +2,11 @@ import java.util.List;
 import java.util.Objects;
 
 public class Employee {
-    String firstName;
-    String twoName;
-    String lastName;
-    int salary;
-    int department;
+    private String firstName;
+    private String twoName;
+    private String lastName;
+    private int salary;
+    private int department;
     private final int id;
     public static int idCounter = 0;
 
@@ -62,14 +62,13 @@ public class Employee {
 
     @Override
     public String toString() {
-        return "Employee{" +
-                "firstName='" + firstName + '\'' +
-                ", twoName='" + twoName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", salary=" + salary +
-                ", department=" + department +
-                ", id=" + id +
-                '}';
+        return "Работник " +
+                " Имя " + firstName + '\'' +
+                " Отчество " + twoName + '\'' +
+                " Фамилия " + lastName + '\'' +
+                " Зарплата " + salary +
+                " Отдел " + department +
+                " id= " + id;
     }
 
     @Override
